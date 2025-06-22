@@ -1,0 +1,15 @@
+services:
+  aosp-20:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: aosp-20
+    container_name: aosp-20
+    volumes:
+      - aosp:/home/th/aosp
+    stdin_open: true
+    tty: true
+
+volumes:
+  aosp:
+    name: aosp

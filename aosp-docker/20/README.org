@@ -1,0 +1,9 @@
+* tag
+aosp-16
+
+* android version
+8.0
+
+
+* manually initial
+

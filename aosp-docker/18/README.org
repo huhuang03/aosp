@@ -1,0 +1,4 @@
+* note
+docker compose up --build -d
+
+repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r9

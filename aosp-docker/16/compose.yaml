@@ -1,0 +1,16 @@
+services:
+  aosp-16:
+    image: aosp-16
+    container_name: aosp-16
+    volumes:
+      - aosp:/home/th/aosp
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        limits:
+          memory: '20G'
+
+volumes:
+  aosp:
+    name: aosp

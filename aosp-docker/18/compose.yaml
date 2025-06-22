@@ -1,0 +1,15 @@
+services:
+  aosp-build-18:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: aosp-build-16
+    container_name: aosp-build-16
+    volumes:
+      - aosp:/home/th/aosp
+    stdin_open: true
+    tty: true
+
+volumes:
+  aosp:
+    name: aosp

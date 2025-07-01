@@ -1,0 +1,8 @@
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+
+
+build:
+	docker build . -t huhuang03/aosp
+
+inspect:
+	docker run -it -v aosp:/aosp ubuntu:latest bash

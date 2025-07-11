@@ -4,5 +4,5 @@ set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
 build:
 	docker build . -t huhuang03/aosp
 
-inspect:
-	docker run -it -v aosp:/aosp ubuntu:latest bash
+bash:
+	docker run -rm -it -v aosp:/aosp huhuang03/aosp:latest bash

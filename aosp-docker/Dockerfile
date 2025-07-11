@@ -11,6 +11,11 @@ ENV GIT_EMAIL=${git_email}
 RUN git config --global user.name "${GIT_USERNAME}"
 RUN git config --global user.email "${GIT_EMAIL}"
 
+# install java
+RUN curl -s "https://get.sdkman.io" | bash
+RUN source "/root/.sdkman/bin/sdkman-init.sh"
+RUN sdk install java 17.0.15-sem
+
 COPY startup.sh /usr/local/bin/startup.sh
 RUN chmod +x /usr/local/bin/startup.sh
 ENTRYPOINT ["/usr/local/bin/startup.sh"]

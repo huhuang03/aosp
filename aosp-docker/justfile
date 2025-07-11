@@ -5,4 +5,4 @@ build:
 	docker build . -t huhuang03/aosp
 
 bash:
-	docker run -rm -it -v aosp:/aosp huhuang03/aosp:latest bash
+	docker run --rm -it -v aosp:/aosp huhuang03/aosp:latest bash
